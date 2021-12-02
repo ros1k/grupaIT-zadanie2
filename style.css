@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Arial', Courier, monospace;
+}
+body{
+    padding:25x;
+}
+header{
+  text-align: center;
+  padding:30px;
+  font-size:25px;
+}
+.content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-bottom:100px;
+}
+.books{
+  width: 100%;
+  max-width: 1200px;
+  padding-right:25px;
+}
+.book--table{
+  color:#434B5B;
+  border-spacing: 0px;
+  width: 100%;
+}
+.book--table td{
+  border:1px solid #E2E7EF;
+  min-width: 150px;
+  margin: 0;
+  padding:10px;
+}
+.book--table thead{
+  font-weight: bold;
+}
+.book--table td:nth-child(2n+1){
+  border-left:none;
+}
+.book--table td:nth-child(2n+1){
+  border-right:none;
+}
+.book--table td:nth-child(1){
+  border-left:1px solid #E2E7EF;
+}
+
+.book--table i{
+  
+  
+
+}
+
+form{
+  padding:0 15px;
+  max-width: 665px;
+}
+.title-wrapper,.author-wrapper, .rating-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.title-wrapper label,.author-wrapper label, .rating-wrapper label, .categories label{
+  margin-bottom: 10px;
+  font-weight: 600;
+  color:#434B5B;
+}
+.title-wrapper input, .author-wrapper input{
+  padding:10px 15px;
+  border-radius: 5px;;
+  border:1px solid #E2E7EF;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: none;
+}
+.title-wrapper input.error,.author-wrapper input.error{
+  border-color:red;
+}
+.title-wrapper input.success,.author-wrapper input.success{
+  border-color:green;
+}
+.title-wrapper input:hover, .author-wrapper input:hover{
+  border-color: #acc6ee;
+}
+.title-wrapper input:active,.title-wrapper input:focus, 
+.author-wrapper input:active, .author-wrapper input:focus{
+  border-color: #387ae4;
+  box-shadow: 1px 1px 7px -2px #387ae4;
+}
+.ratings{
+  display: flex;
+}
+.ratings__single{
+  display:flex;
+  padding:0 15px 0 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.ratings__single input{
+  opacity:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.ratings__single label{
+  font-size:20px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.ratings__single:before{
+  content:"";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border:1px solid #E2E7EF;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.ratings__single.error:before{
+  border-color:red;
+}
+.ratings__single.active:before {
+  border-color:#387ae4;
+  box-shadow: 1px 1px 7px -2px #387ae4;
+}
+
+.ratings__single:after{
+  content:"";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left:5px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border:1px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.ratings__single.active:after {
+  
+  background-color: #387ae4;
+  border:1px solid #387ae4;
+  box-shadow: 1px 1px 7px -2px #387ae4;
+}
+.category{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start ;
+  align-items: start;
+}
+.category__single{
+
+ margin-right: 10px;
+}
+.category__single{
+  padding:8px 5px 8px 10px;
+  border:1px solid #E2E7EF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color:#434B5B;
+  text-transform: capitalize;
+  width: 155px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.category__single.error{
+  border-color:red;
+}
+.category__single.active{
+  border-color:#387ae4;
+  box-shadow: 1px 1px 7px -2px #387ae4;
+}
+.category__single input{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.0;
+}
+.category__single span{
+  font-size:12px;
+}
+.button-28 {
+  
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 220px;
+  will-change: transform;
+  margin-top: 50px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* #E2E7EF */

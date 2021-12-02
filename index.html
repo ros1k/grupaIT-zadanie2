@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupa.it zadanie 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+    <header>
+       <h1>Zadanie 2 - formularz</h1> 
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-7">
+                    <div class="books">
+                        <table class="book--table table table-striped" >
+                            <thead>
+                                <tr>
+                                    <td>Tytuł książki</td>
+                                    <td>Autor książki</td>
+                                    <td>Kategorie</td>
+                                    <td>Priorytet</td>
+                                </tr>
+                                
+                            </thead>
+                            <tbody id="book__list">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-5">
+                    <form>
+                        <div class="title-wrapper">
+                            <label for="title">Tytuł książki:</label>
+                            <input type="text" id="title" name="title" placeholder="min 1 znaki">
+                            <span></span>
+                        </div>
+                        <div class="author-wrapper">
+                            <label for="author">Autor:</label>
+                            <input type="text" id="author" name="author" placeholder="min 3 znaki" >
+                        </div>
+                        <div class="rating-wrapper">
+                            <label for="book__rating">Priorytet przeczytania:</label>
+                            <div class="ratings">
+                                <span class="ratings__single">
+                                    <input type="radio" id="very-low" name="book__rating" value="1">
+                                    <label for="very-low">1</label>
+                                </span>
+                                <span class="ratings__single"> 
+                                    <input type="radio" id="low" name="book__rating" value="2">
+                                    <label for="low">2</label>
+                                </span>
+                                <span class="ratings__single"> 
+                                    <input type="radio" id="medium" name="book__rating" value="3">
+                                    <label for="medium">3</label>
+                                </span>
+                                <span class="ratings__single"> <input type="radio" id="high" name="book__rating" value="4">
+                                    <label for="high">4</label>
+                                </span>
+                                <span class="ratings__single">
+                                    <input type="radio" id="very-high" name="book__rating" value="5">
+                                    <label for="very-high">5</label>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <label for="category">Kategoria (wybierz max 3):</label>
+                            <div class="category" id="category" > 
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="biografie"/>
+                                    <span>
+                                        biografie
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="biznes"/>
+                                    <span>
+                                        biznes
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="ekonomia"/>
+                                    <span>
+                                        ekonomia
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="dramat"/>
+                                    <span>
+                                        dramat
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="fantastyka"/>
+                                    <span>
+                                        fantastyka
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="historia"/>
+                                    <span>
+                                        historia
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="horror"/>
+                                    <span>
+                                        horror
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="informatyka"/>
+                                    <span>
+                                        informatyka
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="kryminał"/>
+                                    <span>
+                                        kryminał
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="kuchnia i diety"/>
+                                    <span>
+                                        kuchnia i diety
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="literatura faktu"/>
+                                    <span>
+                                        literatura faktu
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="literatura obyczajowa"/>
+                                    <span>
+                                        literatura obyczajowa
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="literatura piękna"/>
+                                    <span>
+                                        literatura piękna
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="marketing"/>
+                                    <span>
+                                        marketing
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="nauka języków"/>
+                                    <span>
+                                        nauka języków
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="obcojęzyczne"/>
+                                    <span>
+                                        obcojęzyczne
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="poezja"/>
+                                    <span>
+                                        poezja
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="prawo"/>
+                                    <span>
+                                        prawo
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="psychologia"/>
+                                    <span>
+                                        psychologia
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="religie i wyznania"/>
+                                    <span>
+                                        religie i wyznania
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="rozwój osobisty"/>
+                                    <span>
+                                        rozwój osobisty
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="sensacja"/>
+                                    <span>
+                                        sensacja
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="science fiction"/>
+                                    <span>
+                                        science fiction
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="sztuka"/>
+                                    <span>
+                                        sztuka
+                                    </span>
+                                </div>
+                                <div class="category__single">
+                                    <input type="checkbox" name="category" value="thriller"/>
+                                    <span>
+                                        thriller
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <input id="add-book" type="submit" class="button-28" value="Dodaj nową książkę">  
+                             
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>
